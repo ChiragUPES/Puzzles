@@ -1,0 +1,43 @@
+There is a room and in which we have three bulbs. And their switches are outside the room connected to bulbs. And all the bulbs are in working state.
+There is a door inside the room which you can open only ones. So how will you check which button is for which bulb.
+Ans?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Suppose swicthes be X, Y, Z. Switch on the button x for 5-10 minutes. And than switch of. And then switch on the y button. So the bulb which is very little light
+or which is hot is connected to x. And the bulb which is glowing to connected to y. And the remaing ones connected to third one.

@@ -1,0 +1,34 @@
+Consider a two players.PlayerA and PlayerB. There is a row of even number of coins. and player can pick the coin from any of the two corner of rows. The player
+that collects more value win the game.DEvelop the startergy such that for the player so that making the first turn i.e. PlayerA such that he never looses the game.
+
+Example:
+Row of coins->    18  20  15  30  10  14
+Statergy that not work. Is that if we take the maximum of two corners . As player A chooses maximim of two corner. ie 18 (between 18 and 14)
+                                                                           player B chooses-> 20 (between 20 and 14)
+                                                                           player A chooses-> 15 (between 15 and 14)
+                                                                           player B chooses-> 30
+                                                                           player A chooses-> 14
+                                                                           player B chooses-> 10
+                                                                           sum of player A->18+15+14=47
+                                                                           sum of player B-> 20+30+10=60
+                                                                           Player A looses.
+This stratergy did not work.
+Talking about the next stratergy-> The idea is to count all the values of even coins and all the values of odd coins.We compare the odd values with the even values.
+The value which is maximum let's say value even is maximum. So, player A chooses the even value  and we force player b to choose only odd values. In this way we can 
+win the playerA.
+Example->   0   1   2   3   4    5
+            18  20  15  30  10  14
+            Value at odd-> 20+30+14=64
+            Value at even-> 18+15+10=43
+            Player A select odd value and we forced player B to choose only even value.
+            18  20  15  30  10  14
+       Turn Player A-> can select index value of 0 or 5.So player A selects 14
+            18  20  15  30  10
+            Player B-> selects only values that is on even index. either 18 or 10. Let's say 18.
+            20  15  30  10
+            Player A->  selects 20.
+            15  30  10
+            Player B-> 15
+            Player A-> 30
+            Player B-> 10.
+This is the stratergy.            
